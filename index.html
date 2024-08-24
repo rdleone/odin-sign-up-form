@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="script.js" defer></script>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="bg-sidebar">
+        <!-- <img id="bg-img" src="/assets/images/aldebaran-s-uXchDIKs4qI-unsplash.jpg"> -->
+        <div class="bg-sidebar-text-container">
+            <h1 id="sidebar-title">NOT A SCAM</h1>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="intro">
+            <h2>Hey every! Sign up to win a free iPod Touch!!!</h2>
+            <h3>Yes, really!</h3>
+            <h4>In 2024!</h4>
+            <h5>Or whatever year it is now!</h5>
+        </div>
+        <div class="form-body">
+            <h3>Send this to 5 friends for a chance to win a yellow one!</h3>
+            <form id="signup-form">
+                <ul>
+                    <div id="form-row1">
+                        <li id="item1">
+                            <label for="first-name">FIRST NAME</label>
+                            <input id="first-name" name="first-name" 
+                                autocomplete="off" required></form>
+                        </li>
+                        <li id="item2">
+                            <label for="last-name">LAST NAME</label>
+                            <input id="last-name" name="last-name" 
+                                autocomplete="off" required></form>
+                        </li>
+                    </div>
+                    <div id="form-row2">
+                        <li id="item3">
+                            <label for="email">EMAIL</label>
+                            <input id="email" name="email" type="email" 
+                                autocomplete="off" required></form>
+                        </li>
+                        <li id="item4">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input id="phone" name="phone" type="tel" 
+                                autocomplete="off" minlength="10"></form>
+                        </li>
+                    </div>
+                    <div id="form-row3">
+                        <li id="item5">
+                            <label for="password">PASSWORD</label>
+                            <input id="password" name="password" type="password" 
+                                autocomplete="off" required></form>
+                        </li>
+                        <li id="item6">
+                            <label for="confirm">CONFIRM PASSWORD</label>
+                            <input id="confirm" name="confirm" type="password" 
+                                autocomplete="off" required></form>
+                        </li>
+                    </div>
+                </ul>
+            </form>
+        </div>
+        <div class="actions">
+            <button id="submit-signup" form="signup-form">Submit</button>
+            <p>Haven't received your iPod yet? Complain here</p>
+        </div>
+    </div>
+</body>
+</html>

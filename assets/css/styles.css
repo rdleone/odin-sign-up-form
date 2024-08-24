@@ -1,0 +1,125 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+body > div {
+    min-height: 100vh;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+input {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    height: 24px;
+    min-width: 220px;
+    padding: 2px 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 1px solid lightskyblue;
+    box-shadow: 2px 2px 4px rgb(199, 199, 199);
+}
+
+input:invalid {
+    border: 1px solid lightcoral;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+.bg-sidebar {
+    flex-grow: 1;
+    background-image: url("/assets/images/aldebaran-s-uXchDIKs4qI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: fit-content;
+}
+
+.bg-sidebar > div {
+    background-color: hsla(0, 0%, 80%, 0.500);
+    margin: 50% 0;
+    padding: 8px;
+}
+
+.content {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.content > div {
+    padding: 5vh 4vw;
+}
+
+.intro {
+    background-color: rgb(246, 236, 255);
+}
+
+.form-body {
+    margin-bottom: 8px;
+    box-shadow: 2px 4px 8px rgb(199, 181, 218);
+}
+
+.actions {
+    background-color: rgb(246, 236, 255);
+    flex: 1 1 auto;
+}
+
+#sidebar-title {
+    font-family: "Norse Bold";
+    font-size: 64px;
+    text-align: center;
+    opacity: 1;
+}
+
+#signup-form > ul > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+#signup-form > ul > div > li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#submit-signup {
+    background-color: rgb(50, 24, 143);
+    color: white;
+    padding: 8px 32px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 8px rgb(161, 155, 168);
+}
+
+#submit-signup:hover {
+    background-color: rgb(41, 19, 118);
+}
+
+#submit-signup:active {
+    background-color: rgb(26, 13, 74);
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("/assets/fonts/Norse-Bold.otf");
+}
